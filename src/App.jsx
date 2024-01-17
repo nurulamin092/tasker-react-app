@@ -1,24 +1,20 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import TaskBoard from "./components/TaskBoard/TaskBoard";
+import TaskBoard from "./components/Task/TaskBoard";
 function App() {
   return (
-    <div className="bg-[#191D26] font-[Inter] text-white">
+    <>
       <Header />
-      {/* <!-- Navbar Ends -->
 
-	<!-- Begin hero --> */}
-      <Hero />
-      {/* <!-- End Hero -->
+      <div className="flex flex-col justify-center items-center">
+        <Hero />
 
-	<!-- Begin Table --> */}
-      <TaskBoard />
-      {/* <!-- End Table -->
+        <TaskBoard />
+      </div>
 
-	<!-- Footer --> */}
       <Footer />
-    </div>
+    </>
   );
 }
 
